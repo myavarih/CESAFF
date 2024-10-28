@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Terminal Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="terminal-container">
+      <!-- Title Bar -->
+      <div class="terminal-bar">
+        <div class="terminal-buttons">
+          <span class="btn-red"></span>
+          <span class="btn-yellow"></span>
+          <span class="btn-green"></span>
+        </div>
+        <span>Penguin Terminal - Login</span>
+      </div>
+
+      <!-- Terminal Body -->
+      <div class="terminal-body">
+        <!-- Welcome Message -->
+        <p class="welcome-text">Welcome to Penguin OS! 🐧</p>
+        <p class="subtext">
+          Type your credentials to enter the icy realm of Linux magic.
+        </p>
+
+        <!-- Username Input -->
+        <label class="label" for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          class="input-field"
+          placeholder="Type your username"
+          autofocus
+        />
+
+        <!-- Password Input -->
+        <label class="label" for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          class="input-field"
+          placeholder="Type your password"
+        />
+
+        <!-- Forgot Password Link -->
+        <a href="#" class="forgot-password">Forgot Password?</a>
+
+        <!-- Login Button -->
+        <button class="login-btn" onclick="login()">
+          Enter the Penguin Lair
+        </button>
+
+        <!-- Authentication Message -->
+        <div id="auth-message" style="display: none; margin-top: 20px">
+          Authenticating... please wait, our penguins are at work 🐧...<br />
+          Access granted. Welcome to the Penguin Terminal, Commander!
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        const authMessage = document.getElementById("auth-message");
+        authMessage.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

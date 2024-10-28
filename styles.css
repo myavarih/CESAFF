@@ -1,0 +1,130 @@
+/* Body */
+body {
+  background-color: #000000;
+  font-family: "Courier New", monospace;
+  color: #00ff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Terminal Container */
+.terminal-container {
+  background-color: #101010;
+  width: 95%;
+  max-width: 380px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+/* Title Bar */
+.terminal-bar {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 1.1rem;
+  color: #00ff00;
+}
+
+/* Terminal Dots */
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 10px;
+}
+
+.terminal-buttons .btn-red {
+  background-color: #ff4040;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.terminal-buttons .btn-yellow {
+  background-color: #ffd700;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.terminal-buttons .btn-green {
+  background-color: #00ff00;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* Terminal Body */
+.terminal-body {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #00ff00;
+}
+
+/* Welcome Message */
+.welcome-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #00ff00;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+/* Label and Input Fields */
+.label {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  background-color: #101010;
+  color: #00ff00;
+  border: none;
+  border-bottom: 1px solid #00ff00;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  display: block;
+  font-size: 0.85rem;
+  color: #00ff00;
+  text-decoration: underline;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+/* Button */
+.login-btn {
+  background-color: #303030;
+  color: #00ff00;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background-color: #00ff00;
+  color: #000000;
+}
+
+/* Authentication Message */
+#auth-message {
+  color: #00ff00;
+  font-size: 0.9rem;
+  text-align: center;
+}
+/* aaaa */
